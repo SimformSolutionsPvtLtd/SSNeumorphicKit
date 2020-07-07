@@ -1,0 +1,6 @@
+framework module Pods_SSNeumorphicView_Example {
+  umbrella header "Pods-SSNeumorphicView_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

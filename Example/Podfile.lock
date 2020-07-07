@@ -1,0 +1,16 @@
+PODS:
+  - SSNeumorphicView (0.1.0)
+
+DEPENDENCIES:
+  - SSNeumorphicView (from `../`)
+
+EXTERNAL SOURCES:
+  SSNeumorphicView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SSNeumorphicView: 10c048a896adc4688d7422fcc9d37752a6d985af
+
+PODFILE CHECKSUM: e4e8d08b44dd7220783828c5f6bedc83822def3c
+
+COCOAPODS: 1.9.3
