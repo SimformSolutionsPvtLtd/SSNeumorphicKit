@@ -1,5 +1,5 @@
 PODS:
-  - SSNeumorphicView (0.1.0)
+  - SSNeumorphicView (0.1.2)
 
 DEPENDENCIES:
   - SSNeumorphicView (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SSNeumorphicView: 10c048a896adc4688d7422fcc9d37752a6d985af
+  SSNeumorphicView: d853ecbeeef231834d8f298eed38c1ceb0a08745
 
 PODFILE CHECKSUM: e4e8d08b44dd7220783828c5f6bedc83822def3c
 
