@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SSNeumorphicView_Example' do
+  pod 'SSNeumorphicView', :path => '../'
+
+  target 'SSNeumorphicView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
