@@ -1,31 +1,27 @@
 {
   "name": "SSNeumorphicView",
-  "version": "0.1.0",
-  "summary": "A short description of SSNeumorphicView.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/Ankit panchotiya/SSNeumorphicView",
+  "version": "0.1.2",
+  "summary": "SSNeumorphicKit is a library to build elegant Nemorphic Views, UIButtons, and UITextfields.",
+  "description": "SSNeumorphicKit is a library to build elegant Nemorphic Views, UIButtons, and UITextfields",
+  "homepage": "https://github.com/SimformSolutionsPvtLtd/SSNeumorphicKit.git",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "Ankit panchotiya": "ankitpanchotiya@simformsolutions.com"
+    "Simform Solutions": "developer@simform.com"
   },
   "source": {
-    "git": "https://github.com/Ankit panchotiya/SSNeumorphicView.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/SimformSolutionsPvtLtd/SSNeumorphicKit.git",
+    "tag": "0.1.2"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "10.0"
   },
+  "swift_versions": "5.0",
   "source_files": [
-    "SSNeumorphicView/Classes/**/*",
-    "SSNeumorphicView/Frameworks/*.xcframework"
+    "SSNeumorphicView/Classes/**/*"
   ],
-  "resource_bundles": {
-    "SSNeumorphicView": [
-      "SSNeumorphicView/Frameworks/*.xcframework"
-    ]
-  },
-  "frameworks": "UIKit"
+  "frameworks": "UIKit",
+  "swift_version": "5.0"
 }
