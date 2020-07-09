@@ -13,6 +13,10 @@ public enum ShadowLayerType {
     case innerShadow, outerShadow
 }
 
+public enum SSUIModeType {
+    case darkMode, lightMode
+}
+
 public protocol SSNeumorphicLayerDelegate: UIView {
     var layerSSNeumorphicLayer: SSNeumorphicLayer? { get }
 }
@@ -56,6 +60,13 @@ public class SSNeumorphicLayer: CALayer {
         didSet { neumorphicLayerSubLayer() }
     }
     
+    open var ssUIModeType: SSUIModeType = .lightMode {
+        didSet {
+            neumorphicLayerSubLayer()
+            setNeedsDisplay()
+        }
+    }
+    
     open var elementDepth: CGFloat = 6 {
         didSet { setNeedsDisplay() }
     }
@@ -86,9 +97,13 @@ extension SSNeumorphicLayer {
             self.masksToBounds = self.layerDepthType == .outerShadow ? false : true
             self.darkShadowLayer.removeFromSuperlayer()
             self.lightShadowLayer.removeFromSuperlayer()
+            self.neumorphicMainColor = self.ssUIModeType == .darkMode ? #colorLiteral(red: 0.1176470588, green: 0.1254901961, blue: 0.1333333333, alpha: 0.9448173415) : #colorLiteral(red: 0.9333333333, green: 0.9333333333, blue: 0.9333333333, alpha: 1)
+            self.neumorphicDarkShadowColor = self.ssUIModeType == .darkMode ? #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.4) : #colorLiteral(red: 0.8196078431, green: 0.8509803922, blue: 0.9019607843, alpha: 1).withAlphaComponent(0.7).cgColor
+            self.neumorphicLightShadowColor = self.ssUIModeType == .darkMode ? UIColor.white.withAlphaComponent(0.2).cgColor : UIColor.white.withAlphaComponent(0.7).cgColor
             let darkLayer = self.neumorphicShadowLayer(shadowColor: self.neumorphicDarkShadowColor, shadowOffset: self.neumorphicShadowOffset)
             self.insertSublayer(darkLayer, at: 0)
             self.darkShadowLayer = darkLayer
+            
             let lightLayer = self.neumorphicShadowLayer(shadowColor: self.neumorphicLightShadowColor, shadowOffset: self.neumorphicShadowOffset.inverse)
             self.insertSublayer(lightLayer, at: 0)
             self.lightShadowLayer = lightLayer

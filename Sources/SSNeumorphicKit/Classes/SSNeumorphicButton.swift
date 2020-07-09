@@ -38,6 +38,16 @@ open class SSNeumorphicButton: UIButton {
         }
     }
     
+    open var btnUIModeType: SSUIModeType? {
+        get {
+            return neumorphicLayer?.ssUIModeType
+        } set {
+            if let ssUIModeType = newValue {
+                neumorphicLayer?.ssUIModeType = ssUIModeType
+            }
+        }
+    }
+    
     open var btnNeumorphicLayerMainColor: CGColor? {
         get {
             return neumorphicLayer?.neumorphicMainColor
