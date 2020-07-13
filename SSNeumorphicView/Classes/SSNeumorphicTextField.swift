@@ -39,6 +39,16 @@ open class SSNeumorphicTextField: UITextField {
         }
     }
     
+    open var txtUIModeType: SSUIModeType? {
+        get {
+            return neumorphicLayer?.ssUIModeType
+        } set {
+            if let ssUIModeType = newValue {
+                neumorphicLayer?.ssUIModeType = ssUIModeType
+            }
+        }
+    }
+    
     open var txtNeumorphicMainColor: CGColor? {
         get {
             return neumorphicLayer?.neumorphicMainColor

@@ -39,6 +39,16 @@ open class SSNeumorphicView: UIView {
         }
     }
     
+    open var viewUIModeType: SSUIModeType? {
+        get {
+            return neumorphicLayer?.ssUIModeType
+        } set {
+            if let ssUIModeType = newValue {
+                neumorphicLayer?.ssUIModeType = ssUIModeType
+            }
+        }
+    }
+    
     open var viewNeumorphicMainColor: CGColor? {
         get {
             return neumorphicLayer?.neumorphicMainColor
