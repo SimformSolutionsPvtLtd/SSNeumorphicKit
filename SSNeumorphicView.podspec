@@ -33,7 +33,7 @@ Pod::Spec.new do |s|
 
   s.swift_version = '5.0'
   
-  s.source_files = ['Sources/SSNeumorphicKit/Classes/**/*']
+  s.source_files = ['Sources/SSNeumorphicView/Classes/**/*']
 
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
