@@ -16,11 +16,11 @@
     "tag": "0.1.2"
   },
   "platforms": {
-    "ios": "10.0"
+    "ios": "13.0"
   },
   "swift_versions": "5.0",
   "source_files": [
-    "SSNeumorphicView/Classes/**/*"
+    "Sources/SSNeumorphicView/Classes/**/*"
   ],
   "frameworks": "UIKit",
   "swift_version": "5.0"
