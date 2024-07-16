@@ -50,7 +50,7 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		63C153681EB96023E01793EF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		83E3EDDCCDF7111924A67AD5 /* SSNeumorphicView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SSNeumorphicView.podspec; path = ../SSNeumorphicView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		83E3EDDCCDF7111924A67AD5 /* SSNeumorphicView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SSNeumorphicView.podspec; path = ../SSNeumorphicView.podspec; sourceTree = "<group>"; };
 		854619DF8FE55E64D6A7EDBB /* Pods-SSNeumorphicView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSNeumorphicView_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SSNeumorphicView_Tests/Pods-SSNeumorphicView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		CFB284F115F96A2587CAAF05 /* Pods-SSNeumorphicView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSNeumorphicView_Tests.release.xcconfig"; path = "Target Support Files/Pods-SSNeumorphicView_Tests/Pods-SSNeumorphicView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -537,7 +537,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
@@ -553,7 +553,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 6.0;
 			};
 			name = Release;
 		};
@@ -575,7 +575,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 6.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SSNeumorphicView_Example.app/SSNeumorphicView_Example";
 			};
 			name = Debug;
@@ -594,7 +594,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 6.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SSNeumorphicView_Example.app/SSNeumorphicView_Example";
 			};
 			name = Release;

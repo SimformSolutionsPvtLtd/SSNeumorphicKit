@@ -48,20 +48,20 @@
 		14C25FFE94099F1A00644E0831536B0E /* Pods-SSNeumorphicView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SSNeumorphicView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		157AC2F3BBD8C23671708851A50E3971 /* Pods-SSNeumorphicView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SSNeumorphicView_Example-dummy.m"; sourceTree = "<group>"; };
 		1DF34626D9DDA3541B5716BFEC85F60E /* SSNeumorphicView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSNeumorphicView-umbrella.h"; sourceTree = "<group>"; };
-		3D2619DB53BC72B8984C344719CB68F5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		430511E930ABBBAD1B0E6998EA25F727 /* Pods-SSNeumorphicView_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SSNeumorphicView_Example"; path = Pods_SSNeumorphicView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D2619DB53BC72B8984C344719CB68F5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		430511E930ABBBAD1B0E6998EA25F727 /* Pods_SSNeumorphicView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSNeumorphicView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BC2D963CCC83A6C49E317CF4DCBEE4A /* Pods-SSNeumorphicView_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SSNeumorphicView_Tests-Info.plist"; sourceTree = "<group>"; };
 		4FF2B6E185737EF80246771AD27311C6 /* Pods-SSNeumorphicView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SSNeumorphicView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5BACC9CA86901A2B326884A0BB0BC9CB /* Pods-SSNeumorphicView_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SSNeumorphicView_Tests"; path = Pods_SSNeumorphicView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BACC9CA86901A2B326884A0BB0BC9CB /* Pods_SSNeumorphicView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSNeumorphicView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		612AA768AA1A00EAD36C0915E52D6D8B /* Pods-SSNeumorphicView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SSNeumorphicView_Tests.modulemap"; sourceTree = "<group>"; };
 		63F44A008894F053192326ECE5DB9652 /* Pods-SSNeumorphicView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SSNeumorphicView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		694E50A67AE4FFB5D0012136D762D364 /* Pods-SSNeumorphicView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SSNeumorphicView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7E6DFA34C51AACF31FBF327E9F25901A /* SSNeumorphicView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SSNeumorphicView; path = SSNeumorphicView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E6DFA34C51AACF31FBF327E9F25901A /* SSNeumorphicView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SSNeumorphicView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80A07B8CB35C800B06322559CB07ED13 /* Pods-SSNeumorphicView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SSNeumorphicView_Example-umbrella.h"; sourceTree = "<group>"; };
-		813A5623111B2DED0073C3C137B30CF7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		813A5623111B2DED0073C3C137B30CF7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		86B677BB956892C65ABD24729B873272 /* SSNeumorphicView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SSNeumorphicView.modulemap; sourceTree = "<group>"; };
 		93C4E696AF86E538841A67F320E2163E /* SSNeumorphicView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SSNeumorphicView-Info.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A47BEFA312A5C8EAD069221264166B43 /* Pods-SSNeumorphicView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SSNeumorphicView_Example.modulemap"; sourceTree = "<group>"; };
 		AA4A456DDCAFB2AB5612B4BCDDF97778 /* Pods-SSNeumorphicView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SSNeumorphicView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		BCCD7BA18CCF94BBC29027F810C6090A /* Pods-SSNeumorphicView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SSNeumorphicView_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -76,7 +76,7 @@
 		E5F539D0C629A71ABFBECE9971DC3DF5 /* SSNeumorphicView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSNeumorphicView.swift; path = Sources/SSNeumorphicKit/Classes/SSNeumorphicView.swift; sourceTree = "<group>"; };
 		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		F4A825A739F2711F208985F0E42066D1 /* SSNeumorphicButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSNeumorphicButton.swift; path = Sources/SSNeumorphicKit/Classes/SSNeumorphicButton.swift; sourceTree = "<group>"; };
-		F546A14D284FA4050D083F22B3CF7704 /* SSNeumorphicView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SSNeumorphicView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F546A14D284FA4050D083F22B3CF7704 /* SSNeumorphicView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = SSNeumorphicView.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		FA1A743BD58589BF9056C94C775B9194 /* Pods-SSNeumorphicView_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SSNeumorphicView_Example-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -208,9 +208,9 @@
 		BA62F53486F66FF04562902B6E536E25 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				430511E930ABBBAD1B0E6998EA25F727 /* Pods-SSNeumorphicView_Example */,
-				5BACC9CA86901A2B326884A0BB0BC9CB /* Pods-SSNeumorphicView_Tests */,
-				7E6DFA34C51AACF31FBF327E9F25901A /* SSNeumorphicView */,
+				430511E930ABBBAD1B0E6998EA25F727 /* Pods_SSNeumorphicView_Example.framework */,
+				5BACC9CA86901A2B326884A0BB0BC9CB /* Pods_SSNeumorphicView_Tests.framework */,
+				7E6DFA34C51AACF31FBF327E9F25901A /* SSNeumorphicView.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -282,7 +282,7 @@
 			);
 			name = "Pods-SSNeumorphicView_Tests";
 			productName = Pods_SSNeumorphicView_Tests;
-			productReference = 5BACC9CA86901A2B326884A0BB0BC9CB /* Pods-SSNeumorphicView_Tests */;
+			productReference = 5BACC9CA86901A2B326884A0BB0BC9CB /* Pods_SSNeumorphicView_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		9A4BF4BE08D3D15C28A262F12B1415B3 /* Pods-SSNeumorphicView_Example */ = {
@@ -301,7 +301,7 @@
 			);
 			name = "Pods-SSNeumorphicView_Example";
 			productName = Pods_SSNeumorphicView_Example;
-			productReference = 430511E930ABBBAD1B0E6998EA25F727 /* Pods-SSNeumorphicView_Example */;
+			productReference = 430511E930ABBBAD1B0E6998EA25F727 /* Pods_SSNeumorphicView_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		DAAB6534CA573FAE41802F72CCE1277E /* SSNeumorphicView */ = {
@@ -319,7 +319,7 @@
 			);
 			name = SSNeumorphicView;
 			productName = SSNeumorphicView;
-			productReference = 7E6DFA34C51AACF31FBF327E9F25901A /* SSNeumorphicView */;
+			productReference = 7E6DFA34C51AACF31FBF327E9F25901A /* SSNeumorphicView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -516,7 +516,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -584,7 +584,7 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
@@ -614,7 +614,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -677,9 +677,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 6.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
