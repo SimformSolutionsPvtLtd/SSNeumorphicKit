@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-public enum ShadowLayerType {
+public enum ShadowLayerType { 
     case innerShadow, outerShadow
 }
 
