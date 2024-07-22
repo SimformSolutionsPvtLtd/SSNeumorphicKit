@@ -7,20 +7,20 @@
 
 import SwiftUI
 
-public struct SSNeumorphicKit {
+public struct ColorScheme {
     
-    public enum ColorSchemeType {
+    public enum SchemeType {
         case auto, light, dark
     }
 
-    public static var colorSchemeType : ColorSchemeType = .auto
+    public static var schemeType : SchemeType = .auto
 
     public static func uiColor(red: CGFloat, green: CGFloat, blue: CGFloat) -> UIColor {
         .init(red: red, green: green, blue: blue, alpha: 1.0)
     }
     
     public static func color(light: UIColor, dark: UIColor) -> Color {
-        switch SSNeumorphicKit.colorSchemeType {
+        switch ColorScheme.schemeType {
         case .light:
             return Color(light)
         case .dark:

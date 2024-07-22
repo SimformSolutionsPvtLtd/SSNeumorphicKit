@@ -71,8 +71,8 @@ public struct SUIButtonStyle<S: Shape> : ButtonStyle {
                             
                             // Outer shadow
                             shape.fill(primaryColor)
-                                .outerShadow(darkShadow: darkShadowColor, lightShadow: lightShadowColor, offset: 6, radius: 3)
-                                .opacity(configuration.isPressed ? 0 : 1) 
+                                .outerShadow(darkShadow: darkShadowColor, lightShadow: lightShadowColor, offset: 2, radius: 3)
+                                .opacity(configuration.isPressed ? 0 : 1)
                         } else {
                             shape.stroke(darkShadowColor, lineWidth : 1)
                                 .opacity(1)
