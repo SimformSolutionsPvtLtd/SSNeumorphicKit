@@ -34,6 +34,11 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBOutlet weak var btnGotoSwiftUIDemo: SSNeumorphicButton! {
+        didSet {
+            btnGotoSwiftUIDemo.btnDepthType = .outerShadow
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         if isDarkMode {
@@ -70,6 +75,7 @@ extension ViewController {
         viewNeumorphic.viewUIModeType = mode
         btnNeumorphic.btnUIModeType = mode
         btnRoundedNeumorphic.btnUIModeType = mode
+        btnGotoSwiftUIDemo.btnUIModeType = mode
     }
     
 }
