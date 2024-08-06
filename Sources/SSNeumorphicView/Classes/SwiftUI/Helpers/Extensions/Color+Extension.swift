@@ -48,4 +48,24 @@ public extension Color {
             ColorSchemeManager.color(light: defaultDarkShadowSolidColor, dark: darkThemeDarkShadowSolidColor)
         }
     }
+
+    /// Extension function to mix two colors together.
+    /// - Parameters:
+    ///   - color: Color to be mixed with main color.
+    ///   - percentage: Percentage of second color two be mixed.
+    /// - Returns: A mixture of both colors.
+    @available(iOS 14.0, *)
+    func mix(with color: Color, by percentage: Double) -> Color {
+        let clampedPercentage = min(max(percentage, 0), 1)
+        
+        let components1 = UIColor(self).cgColor.components!
+        let components2 = UIColor(color).cgColor.components!
+        
+        let red = (1.0 - clampedPercentage) * components1[0] + clampedPercentage * components2[0]
+        let green = (1.0 - clampedPercentage) * components1[1] + clampedPercentage * components2[1]
+        let blue = (1.0 - clampedPercentage) * components1[2] + clampedPercentage * components2[2]
+        let alpha = (1.0 - clampedPercentage) * components1[3] + clampedPercentage * components2[3]
+        
+        return Color(red: red, green: green, blue: blue, opacity: alpha)
+    }
 }

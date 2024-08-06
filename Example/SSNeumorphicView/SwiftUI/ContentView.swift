@@ -14,6 +14,7 @@ struct ContentView: View {
     // MARK: - Variables
     
     @State var text = ""
+    @State var isOn = false
     
     // MARK: - Body
     
@@ -69,6 +70,24 @@ struct ContentView: View {
                         .fill(Color.Neumorphic.main)
                         .innerShadow(RoundedRectangle(cornerRadius: 30)), alignment: .center)
                     .padding()
+                if #available(iOS 14.0, *) {
+                    Toggle("Toggle: ", isOn: $isOn)
+                        .toggleStyle(
+                            NMToggleStyle(
+                                tintColor: .green,
+                                hideLabel: false
+                            )
+                        )
+                        .padding()
+                } else {
+                    Toggle("Toggle: ", isOn: $isOn)
+                        .toggleStyle(
+                            NMToggleStyle(
+                                tintColor: .red,
+                                hideLabel: false
+                            )
+                        )
+                }
             }
         }
         .edgesIgnoringSafeArea(.all)
