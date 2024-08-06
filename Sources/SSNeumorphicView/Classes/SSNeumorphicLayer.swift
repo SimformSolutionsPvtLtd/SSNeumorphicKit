@@ -21,6 +21,7 @@ public protocol SSNeumorphicLayerDelegate: UIView {
     var layerSSNeumorphicLayer: SSNeumorphicLayer? { get }
 }
 
+@MainActor
 public class SSNeumorphicLayer: CALayer {
     
     public weak var neumorphicLayerDelegate: SSNeumorphicLayerDelegate?

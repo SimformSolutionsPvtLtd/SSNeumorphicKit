@@ -218,9 +218,9 @@
 		BA62F53486F66FF04562902B6E536E25 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				430511E930ABBBAD1B0E6998EA25F727 /* Pods-SSNeumorphicView_Example */,
-				5BACC9CA86901A2B326884A0BB0BC9CB /* Pods-SSNeumorphicView_Tests */,
-				7E6DFA34C51AACF31FBF327E9F25901A /* SSNeumorphicView */,
+				430511E930ABBBAD1B0E6998EA25F727 /* Pods_SSNeumorphicView_Example.framework */,
+				5BACC9CA86901A2B326884A0BB0BC9CB /* Pods_SSNeumorphicView_Tests.framework */,
+				7E6DFA34C51AACF31FBF327E9F25901A /* SSNeumorphicView.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -282,7 +282,7 @@
 			);
 			name = "Pods-SSNeumorphicView_Tests";
 			productName = Pods_SSNeumorphicView_Tests;
-			productReference = 5BACC9CA86901A2B326884A0BB0BC9CB /* Pods-SSNeumorphicView_Tests */;
+			productReference = 5BACC9CA86901A2B326884A0BB0BC9CB /* Pods_SSNeumorphicView_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		9A4BF4BE08D3D15C28A262F12B1415B3 /* Pods-SSNeumorphicView_Example */ = {
@@ -301,7 +301,7 @@
 			);
 			name = "Pods-SSNeumorphicView_Example";
 			productName = Pods_SSNeumorphicView_Example;
-			productReference = 430511E930ABBBAD1B0E6998EA25F727 /* Pods-SSNeumorphicView_Example */;
+			productReference = 430511E930ABBBAD1B0E6998EA25F727 /* Pods_SSNeumorphicView_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		DAAB6534CA573FAE41802F72CCE1277E /* SSNeumorphicView */ = {
@@ -319,7 +319,7 @@
 			);
 			name = SSNeumorphicView;
 			productName = SSNeumorphicView;
-			productReference = 7E6DFA34C51AACF31FBF327E9F25901A /* SSNeumorphicView */;
+			productReference = 7E6DFA34C51AACF31FBF327E9F25901A /* SSNeumorphicView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -516,7 +516,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -584,7 +584,7 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
@@ -614,7 +614,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -677,9 +677,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 6.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
