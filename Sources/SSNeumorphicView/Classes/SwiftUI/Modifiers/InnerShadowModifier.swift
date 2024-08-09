@@ -38,14 +38,14 @@ public struct InnerShadowModifier<S: Shape>: ViewModifier {
     ///   - shadowColorDark: The color of the dark shadow (default is `Color.Neumorphic.darkShadow`).
     ///   - shadowColorLight: The color of the light shadow (default is `Color.Neumorphic.lightShadow`).
     ///   - radius: The blur radius of the shadow.
-    ///   - shadowWidth: The width of the shadow (default is `8`).
-    ///   - offset: The offset of the shadow (default is `2`).
+    ///   - shadowWidth: The width of the shadow.
+    ///   - offset: The offset of the shadow.
     public init(shape: S,
                 shadowColorDark: Color = Color.Neumorphic.darkShadow,
                 shadowColorLight: Color = Color.Neumorphic.lightShadow,
                 radius: CGFloat,
-                shadowWidth: CGFloat = 8,
-                offset: CGFloat = 2) {
+                shadowWidth: CGFloat,
+                offset: CGFloat) {
         self.shadowColorDark = shadowColorDark
         self.shadowColorLight = shadowColorLight
         self.radius = radius
