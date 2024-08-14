@@ -115,7 +115,9 @@ struct ContentView: View {
                                 )
                         }
                         Button("Coloured Demo") {
-                            changeColor()
+                            withAnimation {
+                                changeColor()
+                            }
                         }
                         .buttonStyle(NMButtonStyle(shape: RoundedRectangle(cornerRadius: 5),
                                                     padding: 20,
