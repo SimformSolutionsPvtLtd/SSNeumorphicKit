@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="pcd-nQ-0oa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23086.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="v7U-Zr-0YM">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23076"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,15 +19,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I5k-ry-p9V" customClass="SSNeumorphicView" customModule="SSNeumorphicView">
-                                <rect key="frame" x="82" y="84" width="250" height="100"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <rect key="frame" x="82" y="128" width="250" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="5Pl-ce-5sK"/>
                                     <constraint firstAttribute="width" constant="250" id="Qcf-59-PF7"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dm0-uf-rKT" customClass="SSNeumorphicButton" customModule="SSNeumorphicView">
-                                <rect key="frame" x="20" y="314" width="374" height="60"/>
+                                <rect key="frame" x="20" y="358" width="374" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Ua1-c0-2VG"/>
                                 </constraints>
@@ -35,7 +37,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgT-RM-H8s" customClass="SSNeumorphicButton" customModule="SSNeumorphicView">
-                                <rect key="frame" x="167" y="414" width="80" height="80"/>
+                                <rect key="frame" x="167" y="458" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="jxy-k1-S1D"/>
                                     <constraint firstAttribute="height" constant="80" id="rhi-Yj-1Zq"/>
@@ -48,7 +50,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jry-b9-aQa" customClass="SSBaseTextField" customModule="SSNeumorphicView_Example" customModuleProvider="target">
-                                <rect key="frame" x="30" y="224" width="354" height="50"/>
+                                <rect key="frame" x="30" y="268" width="354" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" name="darkGray"/>
                                 <constraints>
@@ -67,7 +69,21 @@
                                     <userDefinedRuntimeAttribute type="image" keyPath="rightImage" value="imgUnLike"/>
                                 </userDefinedRuntimeAttributes>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="beK-oF-TsR" customClass="SSNeumorphicButton" customModule="SSNeumorphicView">
+                                <rect key="frame" x="20" y="699" width="374" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="TAF-e1-aC1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Go to SwiftUI Demo">
+                                    <color key="titleColor" name="darkGray"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Ovc-vl-7vf" kind="show" id="LGg-qr-RMA"/>
+                                </connections>
+                            </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="Vox-rQ-XB8"/>
                         <color key="backgroundColor" name="Color"/>
                         <constraints>
                             <constraint firstItem="jry-b9-aQa" firstAttribute="leading" secondItem="Vox-rQ-XB8" secondAttribute="leading" constant="30" id="31W-V2-HT2"/>
@@ -78,13 +94,17 @@
                             <constraint firstItem="bgT-RM-H8s" firstAttribute="centerX" secondItem="ikR-pH-dZt" secondAttribute="centerX" id="K1L-sB-qEy"/>
                             <constraint firstItem="dm0-uf-rKT" firstAttribute="top" secondItem="jry-b9-aQa" secondAttribute="bottom" constant="40" id="MFA-YE-9N9"/>
                             <constraint firstItem="dm0-uf-rKT" firstAttribute="leading" secondItem="Vox-rQ-XB8" secondAttribute="leading" constant="20" id="ORF-Sj-Ki3"/>
+                            <constraint firstItem="beK-oF-TsR" firstAttribute="top" secondItem="bgT-RM-H8s" secondAttribute="bottom" constant="161" id="R2c-TK-TDn"/>
                             <constraint firstItem="Vox-rQ-XB8" firstAttribute="trailing" secondItem="dm0-uf-rKT" secondAttribute="trailing" constant="20" id="XNU-me-Wrg"/>
+                            <constraint firstItem="beK-oF-TsR" firstAttribute="leading" secondItem="dm0-uf-rKT" secondAttribute="leading" id="gC2-aq-pm8"/>
+                            <constraint firstItem="beK-oF-TsR" firstAttribute="trailing" secondItem="dm0-uf-rKT" secondAttribute="trailing" id="mtB-mN-vzG"/>
                             <constraint firstItem="jry-b9-aQa" firstAttribute="top" secondItem="I5k-ry-p9V" secondAttribute="bottom" constant="40" id="vvv-1K-uwF"/>
                             <constraint firstItem="dm0-uf-rKT" firstAttribute="centerX" secondItem="ikR-pH-dZt" secondAttribute="centerX" id="zSK-di-AVA"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Vox-rQ-XB8"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Mdk-nB-83B"/>
                     <connections>
+                        <outlet property="btnGotoSwiftUIDemo" destination="beK-oF-TsR" id="ddd-Sj-XAV"/>
                         <outlet property="btnNeumorphic" destination="dm0-uf-rKT" id="vL9-ar-RnG"/>
                         <outlet property="btnRoundedNeumorphic" destination="bgT-RM-H8s" id="diY-nZ-cpG"/>
                         <outlet property="txtSSNeumorphic" destination="jry-b9-aQa" id="hZM-Sz-8Cx"/>
@@ -93,7 +113,44 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M8r-oP-P8x" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="346" y="112"/>
+            <point key="canvasLocation" x="1255.072463768116" y="111.83035714285714"/>
+        </scene>
+        <!--Hosting View Controller-->
+        <scene sceneID="CSO-PI-zEn">
+            <objects>
+                <viewController id="Ovc-vl-7vf" customClass="UIHostingViewController" customModule="SSNeumorphicView_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="z8H-tr-MUT"/>
+                        <viewControllerLayoutGuide type="bottom" id="YCG-Hq-HjB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mN4-rL-aiw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="V8U-Wx-75x"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L2H-4y-CIY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2186.9565217391305" y="111.83035714285714"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="W70-Db-vXm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="v7U-Zr-0YM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EnE-83-Fzv">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pcd-nQ-0oa" kind="relationship" relationship="rootViewController" id="Bu2-ac-ytY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aWq-kD-qTp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="344.92753623188406" y="111.83035714285714"/>
         </scene>
     </scenes>
     <resources>
@@ -105,5 +162,8 @@
         <namedColor name="darkGray">
             <color red="0.2627450980392157" green="0.2627450980392157" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
