@@ -18,10 +18,10 @@
   "platforms": {
     "ios": "13.0"
   },
-  "swift_versions": "5.0",
+  "swift_versions": "6.0",
   "source_files": [
     "Sources/SSNeumorphicView/Classes/**/*"
   ],
   "frameworks": "UIKit",
-  "swift_version": "5.0"
+  "swift_version": "6.0"
 }
