@@ -15,18 +15,21 @@ extension View {
     ///   - lightShadow: The color of the light shadow for the bottom trailing area (default is `Color.Neumorphic.lightShadow`).
     ///   - offset: The offset of the shadows. This offset will be applied to both shadows (default is `2`).
     ///   - radius: The blur radius for the shadows. A lower radius gives a sharper shadow, while a higher radius provides a smoother shadow (default is `2`).
+    ///   - shadowWidth: The width of the inner shadow (default is `8`).
     /// - Returns: A view with the applied inner shadow effect.
     public func innerShadow<S: Shape>(
         _ shape: S,
         darkShadow: Color = Color.Neumorphic.darkShadow,
         lightShadow: Color = Color.Neumorphic.lightShadow,
         offset: CGFloat = 2,
-        radius: CGFloat = 2
+        radius: CGFloat = 2,
+        shadowWidth: CGFloat = 8
     ) -> some View {
         modifier(InnerShadowModifier(shape: shape,
                                      shadowColorDark: darkShadow,
                                      shadowColorLight: lightShadow,
                                      radius: radius,
+                                     shadowWidth: shadowWidth,
                                      offset: offset))
     }
     

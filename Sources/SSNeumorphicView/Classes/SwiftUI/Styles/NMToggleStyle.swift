@@ -189,7 +189,7 @@ public struct NMToggleStyle: ToggleStyle {
                     // Shape that makes the outside of the toggle.
                     Capsule()
                         .fill(offTintColor)
-                        .outerShadow()  // Give outer shadows for the outer shape.
+                        .outerShadow(darkShadow: offDarkShadow, lightShadow: offLightShadow)  // Give outer shadows for the outer shape.
                         .frame(width: width, height: height)
                     
                     // Shape that makes the inside of the toggle.
