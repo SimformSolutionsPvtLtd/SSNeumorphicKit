@@ -1,46 +1,103 @@
 # SSNeumorphicView
 
-SSNeumorphicView is to build a Neumorphism view, button, and text filed in iOS.
+SSNeumorphicView allows you to create Neumorphic designs for views, toggleView, buttons, and text fields in iOS. Neumorphism combines minimalism with realistic shadows, creating a soft and embossed effect that elevates UI components.
 
 [![Swift Version][swift-image]][swift-url]
-[![Build Status][travis-image]][travis-url]
 [![License][license-image]][license-url]
+[![SwiftPM Compatible][spm-image]][spm-url]
+[![Version](https://img.shields.io/cocoapods/v/SSNeumorphicView.svg?style=flat)](https://cocoapods.org/pods/SSNeumorphicView)
+[![Platform][platform-image]][platform-url]
+[![PRs Welcome][PR-image]][PR-url]
 
 <img src="https://github.com/SimformSolutionsPvtLtd/SSNeumorphicKit/blob/feature/ssneumophickit/Screenshots/image.jpg">
 
-# Features!
-- Create Neumorphic view, button and text field using the SSNeumorphicView
+# Features! :sparkles:
+- Easy creation of Neumorphic views, buttons, text fields and toggle view.
+- Supports both inner and outer shadows.
+- Compatible with both UIKit and SwiftUI.
+- Supports customization of shadow colors and depths.
 
-## Example
+# Example :iphone:
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-# Requirements
+# Requirements :clipboard:
 - iOS 13.0+
 - Xcode 11+
 
-# Installation
+# Installation :package:
  **CocoaPods**
-    You can use CocoaPods to install SSNeumorphicView by adding it to your Podfile:
+ 
+ [CocoaPods][CocoaPods.org] is a dependency manager for Cocoa projects. You can install it with the following command:
 
-       use_frameworks!
-       pod 'SSNeumorphicView'
+```bash
+$ gem install cocoapods
+```
 
-# Usage example
+Navigate to project root folder to integrate pod.
 
-## How to use with UIKit and Storyboard:
+```bash
+$ pod init
+```
 
-In the storyboard add a UIView and change its class to SSNeumorphicView
+It will generate `Podfile` for your project. To integrate SSNeumorphicView into your project specify it in your `Podfile`:
+
+```ruby
+platform :ios, '13.0'
+use_frameworks!
+
+target '<Your Target Name>' do
+    pod 'SSNeumorphicView'
+end
+```
+
+Then, run the following command:
+
+```bash
+$ pod install
+```
+
+It will generate `<Project>.xcworkspace` file. From now on you should open the project using this file.
+
+**Swift Package Manager**
+ 
+You can install `SSNeumorphicView` using [Swift Package Manager] by:
+
+1. Go to `Xcode` -> `File` -> `Add Package Dependencies...`
+2. Add package URL [https://cocoapods.org/pods/SSNeumorphicView][SSNeumorphicView]
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/SimformSolutionsPvtLtd/SSNeumorphicKit.git", from: "0.1.2")
+]
+```
+
+**Manually**
+
+- Add SSNeumorphicView folder from /Sources folder to your project.
+
+# Usage example :bulb:
+
+## How to use with UIKit and Storyboard: :framed_picture:
+
+### In the storyboard add a UIView and change its class to SSNeumorphicView
 
    <img src="https://github.com/SimformSolutionsPvtLtd/SSNeumorphicKit/blob/feature/ssneumophickit/Screenshots/Screenshot%202020-07-07%20at%207.22.23%20PM.png">
  
-Import Neumorphic package to your view.
+### NOTE:
+- For **UIButton** add **SSNeumorphicButton** as its class.
+- For **UITextField** add **SSBaseTextField** as its class.
+
+### Import Neumorphic package to your view.
         
-        import SSNeumorphicView
+    import SSNeumorphicView
 
-Create NeumorphicView with the outer shadow.
+### Create NeumorphicView with the outer shadow.
 
- <img src="https://github.com/SimformSolutionsPvtLtd/SSNeumorphicKit/blob/feature/ssneumophickit/Screenshots/iPhone11Pro%20MaxViewOuter.png" width="40%">
+| <center> Light Mode </center> | <center> Dark Mode </center> |
+|----------|----------|
+| <img src="Screenshots/UI-Kit-Demo-SS/shape-light.png" > | <img src="Screenshots/UI-Kit-Demo-SS/shape-dark.png" > |
+
 
     @IBOutlet weak var viewNeumorphic: SSNeumorphicView! {
         didSet {
@@ -48,9 +105,12 @@ Create NeumorphicView with the outer shadow.
         }
     }
         
-Create neumorphic text field with the Inner shadow.
+### Create neumorphic text field with the Inner shadow.
 
-<img src="https://github.com/SimformSolutionsPvtLtd/SSNeumorphicKit/blob/feature/ssneumophickit/Screenshots/iPhone11Pro%20MaxTextfiled.png" width="40%">
+| <center> Light Mode </center> | <center> Dark Mode </center> |
+|----------|----------|
+| <img src="Screenshots/UI-Kit-Demo-SS/text-field-light.png" > | <img src="Screenshots/UI-Kit-Demo-SS/text-field-dark.png" > |
+
  
     @IBOutlet weak var txtSSNeumorphic: SSBaseTextField! {
         didSet {
@@ -58,9 +118,12 @@ Create neumorphic text field with the Inner shadow.
         }
     }
 
-Create neumorphic button with the Outer shadow.
+### Create neumorphic button with the Outer shadow.
 
-<img src="https://github.com/SimformSolutionsPvtLtd/SSNeumorphicKit/blob/feature/ssneumophickit/Screenshots/iPhone11ProMaxButtonOuter.png" width="40%">
+| <center> Light Mode </center> | <center> Dark Mode </center> |
+|----------|----------|
+| <img src="Screenshots/UI-Kit-Demo-SS/button-light.png" > | <img src="Screenshots/UI-Kit-Demo-SS/button-dark.png" > |
+
  
     @IBOutlet weak var btnNeumorphic: SSNeumorphicButton! {
         didSet {
@@ -68,9 +131,12 @@ Create neumorphic button with the Outer shadow.
         }
     }
     
-Create neumorphic rounded button with the inner shadow.
+### Create neumorphic rounded button with the inner shadow.
 
-   <img src="https://github.com/SimformSolutionsPvtLtd/SSNeumorphicKit/blob/feature/ssneumophickit/Screenshots/iPhone11ProMaxRoundedButton.png" width="40%">
+| <center> Light Mode </center> | <center> Dark Mode </center> |
+|----------|----------|
+| <img src="Screenshots/UI-Kit-Demo-SS/round-button-light.png" > | <img src="Screenshots/UI-Kit-Demo-SS/round-button-dark.png" > |
+
 
     @IBOutlet weak var btnRoundedNeumorphic: SSNeumorphicButton! {
         didSet {
@@ -80,7 +146,7 @@ Create neumorphic rounded button with the inner shadow.
         }
     }
     
-## How to Use with SwiftUI:
+### How to Use with SwiftUI: :jigsaw:
 ### Import Neumorphic package to your view.
         
     import SSNeumorphicView
@@ -297,7 +363,25 @@ var body: some View {
 ```
 **NOTE:** To fully customize the NMToggleStyle checkout [NMToggleStyleGuide.md](Docs/NMToggleStyleGuide.md).
 
-## License
+## 🤝 How to Contribute
+
+Whether you're helping us fix bugs, improve the docs, or a feature request, we'd love to have you! :muscle:
+
+Check out our [**Contributing Guide**](CONTRIBUTING.md) for ideas on contributing.
+
+## Bugs and Feedback :beetle:
+
+For bugs, feature requests, and discussion use [GitHub Issues].
+
+## Find this samples useful? :heart:
+
+Support it by joining [stargazers] :star: for this repository.
+
+## Check out our other Libraries
+
+<h4><a href="https://github.com/SimformSolutionsPvtLtd/Awesome-Mobile-Libraries"><u>🗂 Simform Solutions Libraries→</u></a></h4>
+
+## License :scroll:
 
 SSNeumorphicView is available under the MIT license. See the [LICENSE](./LICENSE) file for more info.
 
@@ -308,3 +392,20 @@ SSNeumorphicView is available under the MIT license. See the [LICENSE](./LICENSE
 [license-url]: LICENSE
 [travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
 [travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
+[carthage-image]:https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat
+[carthage-url]: https://github.com/Carthage/Carthage
+[spm-image]:https://img.shields.io/badge/SwiftPM-compatible-brightgreen.svg
+[spm-url]: https://swift.org/package-manager
+[platform-image]:https://img.shields.io/cocoapods/p/LFAlertController.svg?style=flat
+[platform-url]:http://cocoapods.org/pods/LFAlertController
+[cocoa-image]:https://img.shields.io/cocoapods/v/EZSwiftExtensions.svg
+[cocoa-url]:https://img.shields.io/cocoapods/v/LFAlertController.svg
+[PR-image]:https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square
+[PR-url]:http://makeapullrequest.com
+[Swift Package Manager]:https://www.swift.org/package-manager
+[Github Issues]:https://github.com/SimformSolutionsPvtLtd/SSNeumorphicKit/issues
+[CocoaPods]:https://cocoapods.org/pods/SSNeumorphicView
+[CocoaPods.org]:https://cocoapods.org/
+[stargazers]:https://github.com/SimformSolutionsPvtLtd/SSNeumorphicKit/stargazers
+[Documentation]:https://swiftpackageindex.com/SimformSolutionsPvtLtd/SSNeumorphicView
+[SSNeumorphicView]:https://github.com/SimformSolutionsPvtLtd/SSNeumorphicKit
