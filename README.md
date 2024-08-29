@@ -15,13 +15,21 @@ SSNeumorphicView simplifies the process of incorporating Neumorphic elements int
 
 # Features! :sparkles:
 - 🎨 Seamless Neumorphic Integration: Easily apply Neumorphic designs to views, buttons, text fields, and toggle views with just a few lines of code.
+
 - 🌗 Dynamic Adaptation for Light and Dark Modes: Automatically adapts to both light and dark modes, ensuring your app looks great regardless of the user’s device settings.
+
 - 🖌️ Customizable Shadows: Support for both inner and outer shadows, allowing you to create depth and emboss effects that suit your design needs.
+
 - 🧩 Compatibility with UIKit and SwiftUI: Leverage the power of Neumorphic design across both UIKit and SwiftUI, providing flexibility in how you build your iOS app.
+
 - 🛠️ Easy Customization: Customize shadow colors, depths, corner radius, and more to match your app’s design language.
+
 - 🧱 Out-of-the-Box Components: Prebuilt Neumorphic components such as buttons and toggle views, with customizable styles like NMButtonStyle and NMToggleStyle, allowing you to further tailor their appearance and behavior.
+
 - ⚡ Efficient Performance: Built with performance in mind, SSNeumorphicView ensures smooth animations and transitions, even on devices with lower processing power.
+
 - 📚 Detailed Documentation and Examples: Comprehensive guides and examples to help you get started quickly and efficiently.
+
 - 🔄 Responsive Design: Ensures your Neumorphic elements look great on various screen sizes and orientations.
 
 # Example :iphone:
