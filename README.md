@@ -81,7 +81,7 @@ You can install `SSNeumorphicView` using [Swift Package Manager] by:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/SimformSolutionsPvtLtd/SSNeumorphicKit.git", from: "0.1.2")
+    .package(url: "https://github.com/SimformSolutionsPvtLtd/SSNeumorphicKit.git", from: "1.0.0")
 ]
 ```
 
