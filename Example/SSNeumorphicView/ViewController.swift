@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     }
     @IBOutlet weak var btnNeumorphic: SSNeumorphicButton! {
         didSet {
-            btnNeumorphic.btnDepthType = .innerShadow
+            btnNeumorphic.btnDepthType = .outerShadow
         }
     }
     @IBOutlet weak var btnRoundedNeumorphic: SSNeumorphicButton! {
@@ -34,9 +34,32 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBOutlet weak var btnGotoSwiftUIDemo: SSNeumorphicButton! {
+        didSet {
+            btnGotoSwiftUIDemo.btnDepthType = .outerShadow
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        if isDarkMode {
+            updateUIMode(.darkMode)
+        } else {
+            updateUIMode(.lightMode)
+        }
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        let userInterfaceStyle = traitCollection.userInterfaceStyle
+        switch userInterfaceStyle {
+        case .dark:
+            updateUIMode(.darkMode)
+        case .light:
+            updateUIMode(.lightMode)
+        default:
+            break
+        }
     }
     
     @IBAction func tappedOnLike(_ sender: Any) {
@@ -45,3 +68,27 @@ class ViewController: UIViewController {
     
 }
 
+extension ViewController {
+    
+    func updateUIMode(_ mode: SSUIModeType) {
+        txtSSNeumorphic.txtUIModeType = mode
+        viewNeumorphic.viewUIModeType = mode
+        btnNeumorphic.btnUIModeType = mode
+        btnRoundedNeumorphic.btnUIModeType = mode
+        btnGotoSwiftUIDemo.btnUIModeType = mode
+    }
+    
+}
+
+extension UIViewController {
+    
+    var isDarkMode: Bool {
+        if #available(iOS 13.0, *) {
+            return self.traitCollection.userInterfaceStyle == .dark
+        }
+        else {
+            return false
+        }
+    }
+
+}

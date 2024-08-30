@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="pcd-nQ-0oa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23086.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="v7U-Zr-0YM">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23076"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,42 +19,44 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I5k-ry-p9V" customClass="SSNeumorphicView" customModule="SSNeumorphicView">
-                                <rect key="frame" x="82" y="84" width="250" height="200"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <rect key="frame" x="82" y="128" width="250" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="5Pl-ce-5sK"/>
+                                    <constraint firstAttribute="height" constant="100" id="5Pl-ce-5sK"/>
                                     <constraint firstAttribute="width" constant="250" id="Qcf-59-PF7"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dm0-uf-rKT" customClass="SSNeumorphicButton" customModule="SSNeumorphicView">
-                                <rect key="frame" x="20" y="414" width="374" height="60"/>
+                                <rect key="frame" x="20" y="358" width="374" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Ua1-c0-2VG"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <state key="normal" title="Neumorphic Button">
-                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" name="darkGray"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgT-RM-H8s" customClass="SSNeumorphicButton" customModule="SSNeumorphicView">
-                                <rect key="frame" x="167" y="514" width="80" height="80"/>
+                                <rect key="frame" x="167" y="458" width="80" height="80"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="jxy-k1-S1D"/>
                                     <constraint firstAttribute="height" constant="80" id="rhi-Yj-1Zq"/>
-                                    <constraint firstAttribute="width" constant="80" id="rwi-18-UDg"/>
                                 </constraints>
                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <inset key="imageEdgeInsets" minX="15" minY="15" maxX="15" maxY="15"/>
+                                <inset key="imageEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
                                 <state key="normal" image="imgLike"/>
                                 <connections>
                                     <action selector="tappedOnLike:" destination="pcd-nQ-0oa" eventType="touchUpInside" id="Z5O-EV-75S"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jry-b9-aQa" customClass="SSBaseTextField" customModule="SSNeumorphicView_Example" customModuleProvider="target">
-                                <rect key="frame" x="30" y="324" width="354" height="50"/>
-                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="30" y="268" width="354" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" name="darkGray"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="EWE-9f-UNt"/>
                                 </constraints>
+                                <color key="textColor" name="darkGray"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 <userDefinedRuntimeAttributes>
@@ -62,11 +66,25 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
                                         <real key="value" value="24"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="rightImage" value="eye.slash" catalog="system"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="rightImage" value="imgUnLike"/>
                                 </userDefinedRuntimeAttributes>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="beK-oF-TsR" customClass="SSNeumorphicButton" customModule="SSNeumorphicView">
+                                <rect key="frame" x="20" y="598" width="374" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="TAF-e1-aC1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Go to SwiftUI Demo">
+                                    <color key="titleColor" name="darkGray"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Ovc-vl-7vf" kind="show" id="LGg-qr-RMA"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Vox-rQ-XB8"/>
+                        <color key="backgroundColor" name="Color"/>
                         <constraints>
                             <constraint firstItem="jry-b9-aQa" firstAttribute="leading" secondItem="Vox-rQ-XB8" secondAttribute="leading" constant="30" id="31W-V2-HT2"/>
                             <constraint firstItem="bgT-RM-H8s" firstAttribute="top" secondItem="dm0-uf-rKT" secondAttribute="bottom" constant="40" id="3Ah-cK-Vpy"/>
@@ -76,13 +94,17 @@
                             <constraint firstItem="bgT-RM-H8s" firstAttribute="centerX" secondItem="ikR-pH-dZt" secondAttribute="centerX" id="K1L-sB-qEy"/>
                             <constraint firstItem="dm0-uf-rKT" firstAttribute="top" secondItem="jry-b9-aQa" secondAttribute="bottom" constant="40" id="MFA-YE-9N9"/>
                             <constraint firstItem="dm0-uf-rKT" firstAttribute="leading" secondItem="Vox-rQ-XB8" secondAttribute="leading" constant="20" id="ORF-Sj-Ki3"/>
+                            <constraint firstItem="beK-oF-TsR" firstAttribute="top" secondItem="bgT-RM-H8s" secondAttribute="bottom" constant="60" id="R2c-TK-TDn"/>
                             <constraint firstItem="Vox-rQ-XB8" firstAttribute="trailing" secondItem="dm0-uf-rKT" secondAttribute="trailing" constant="20" id="XNU-me-Wrg"/>
+                            <constraint firstItem="beK-oF-TsR" firstAttribute="leading" secondItem="dm0-uf-rKT" secondAttribute="leading" id="gC2-aq-pm8"/>
+                            <constraint firstItem="beK-oF-TsR" firstAttribute="trailing" secondItem="dm0-uf-rKT" secondAttribute="trailing" id="mtB-mN-vzG"/>
                             <constraint firstItem="jry-b9-aQa" firstAttribute="top" secondItem="I5k-ry-p9V" secondAttribute="bottom" constant="40" id="vvv-1K-uwF"/>
                             <constraint firstItem="dm0-uf-rKT" firstAttribute="centerX" secondItem="ikR-pH-dZt" secondAttribute="centerX" id="zSK-di-AVA"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Vox-rQ-XB8"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Mdk-nB-83B"/>
                     <connections>
+                        <outlet property="btnGotoSwiftUIDemo" destination="beK-oF-TsR" id="ddd-Sj-XAV"/>
                         <outlet property="btnNeumorphic" destination="dm0-uf-rKT" id="vL9-ar-RnG"/>
                         <outlet property="btnRoundedNeumorphic" destination="bgT-RM-H8s" id="diY-nZ-cpG"/>
                         <outlet property="txtSSNeumorphic" destination="jry-b9-aQa" id="hZM-Sz-8Cx"/>
@@ -91,11 +113,57 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M8r-oP-P8x" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="346" y="112"/>
+            <point key="canvasLocation" x="1255.072463768116" y="111.83035714285714"/>
+        </scene>
+        <!--Hosting View Controller-->
+        <scene sceneID="CSO-PI-zEn">
+            <objects>
+                <viewController id="Ovc-vl-7vf" customClass="UIHostingViewController" customModule="SSNeumorphicView_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="z8H-tr-MUT"/>
+                        <viewControllerLayoutGuide type="bottom" id="YCG-Hq-HjB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mN4-rL-aiw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="V8U-Wx-75x"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L2H-4y-CIY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2186.9565217391305" y="111.83035714285714"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="W70-Db-vXm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="v7U-Zr-0YM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EnE-83-Fzv">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pcd-nQ-0oa" kind="relationship" relationship="rootViewController" id="Bu2-ac-ytY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aWq-kD-qTp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="344.92753623188406" y="111.83035714285714"/>
         </scene>
     </scenes>
     <resources>
-        <image name="eye.slash" catalog="system" width="64" height="42"/>
         <image name="imgLike" width="48" height="48"/>
+        <image name="imgUnLike" width="48" height="48"/>
+        <namedColor name="Color">
+            <color red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="darkGray">
+            <color red="0.2627450980392157" green="0.2627450980392157" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

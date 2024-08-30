@@ -12,6 +12,8 @@
 		3048381624B46D5000258065 /* SSBaseTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3048381524B46D5000258065 /* SSBaseTextField.swift */; };
 		3048381824B48E0700258065 /* SSBaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3048381724B48E0700258065 /* SSBaseButton.swift */; };
 		338CCE328AD91051C8BCFD54 /* Pods_SSNeumorphicView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BCB628E5CDF3C54B6DF4C9E /* Pods_SSNeumorphicView_Example.framework */; };
+		45F34BFC2C5BB7D700FFFEE5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F34BFB2C5BB7D700FFFEE5 /* ContentView.swift */; };
+		45F34BFE2C5BB7E600FFFEE5 /* UIHostingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F34BFD2C5BB7E600FFFEE5 /* UIHostingViewController.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -39,6 +41,8 @@
 		3048381724B48E0700258065 /* SSBaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSBaseButton.swift; sourceTree = "<group>"; };
 		33BFF2B15F6D97C6158B57D8 /* Pods-SSNeumorphicView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSNeumorphicView_Example.release.xcconfig"; path = "Target Support Files/Pods-SSNeumorphicView_Example/Pods-SSNeumorphicView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		370D72D4CCA465F0EB27DEC5 /* Pods_SSNeumorphicView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSNeumorphicView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45F34BFB2C5BB7D700FFFEE5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		45F34BFD2C5BB7E600FFFEE5 /* UIHostingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHostingViewController.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* SSNeumorphicView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSNeumorphicView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,7 +54,7 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		63C153681EB96023E01793EF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		83E3EDDCCDF7111924A67AD5 /* SSNeumorphicView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SSNeumorphicView.podspec; path = ../SSNeumorphicView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		83E3EDDCCDF7111924A67AD5 /* SSNeumorphicView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SSNeumorphicView.podspec; path = ../SSNeumorphicView.podspec; sourceTree = "<group>"; };
 		854619DF8FE55E64D6A7EDBB /* Pods-SSNeumorphicView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSNeumorphicView_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SSNeumorphicView_Tests/Pods-SSNeumorphicView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		CFB284F115F96A2587CAAF05 /* Pods-SSNeumorphicView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSNeumorphicView_Tests.release.xcconfig"; path = "Target Support Files/Pods-SSNeumorphicView_Tests/Pods-SSNeumorphicView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				45F34BFD2C5BB7E600FFFEE5 /* UIHostingViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -102,6 +107,7 @@
 		3048381124B4654F00258065 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				45F34BFA2C5BB7BA00FFFEE5 /* SwiftUI */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 			);
@@ -115,6 +121,14 @@
 				3048381724B48E0700258065 /* SSBaseButton.swift */,
 			);
 			name = "Custom Control";
+			sourceTree = "<group>";
+		};
+		45F34BFA2C5BB7BA00FFFEE5 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				45F34BFB2C5BB7D700FFFEE5 /* ContentView.swift */,
+			);
+			path = SwiftUI;
 			sourceTree = "<group>";
 		};
 		607FACC71AFB9204008FA782 = {
@@ -382,9 +396,11 @@
 			files = (
 				3048381824B48E0700258065 /* SSBaseButton.swift in Sources */,
 				3048380D24B4651500258065 /* UIView+Extension.swift in Sources */,
+				45F34BFC2C5BB7D700FFFEE5 /* ContentView.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				3048381624B46D5000258065 /* SSBaseTextField.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				45F34BFE2C5BB7E600FFFEE5 /* UIHostingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,13 +547,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SSNeumorphicView/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -547,13 +563,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SSNeumorphicView/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -570,11 +586,12 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SSNeumorphicView_Example.app/SSNeumorphicView_Example";
 			};
 			name = Debug;
@@ -588,11 +605,12 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SSNeumorphicView_Example.app/SSNeumorphicView_Example";
 			};
 			name = Release;
